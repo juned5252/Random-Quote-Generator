@@ -3,6 +3,9 @@ body {
   background-color: #36b55c;
   color: white;
   font-family: 'Playfair Display', serif;
+  text-shadow: #474747 3px 5px 2px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 #quote-box {
   position: absolute;
@@ -18,7 +21,7 @@ body {
   line-height: 1.1;
   position: relative;
   margin: 0;
-  } 
+  }
 .quote:before, .quote:after {
   font-size: 6rem;
   line-height: 2.5rem;
@@ -67,12 +70,11 @@ body {
   border-radius: 4px;
   border: 2px solid #fff;
   color: #fff;
-  background-color: #36b55c;
+	background-color: rgba(255,255,255,.25);
   padding: 15px 0;
   transition: .5s ;
-}
-#loadQuote:hover {
-  background-color: rgba(255,255,255,.25);
+  text-shadow: #474747 3px 1px 2px;
+  box-shadow: #474747 3px 5px 2px;
 }
 #loadQuote:focus {
   outline: none;
