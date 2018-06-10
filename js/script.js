@@ -2,7 +2,7 @@
 // when user clicks anywhere on the button, the "printQuote" function is called
 var message = ''
 var result
-document.getElementById('loadQuote').addEventListener("click", printQuote, false);
+document.getElementById('loadQuote').addEventListener("click",printQuote, false);
 
 
 
