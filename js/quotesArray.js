@@ -2,7 +2,7 @@
 
 // this file contains the array of quote objects that will be referenced by the script.js file
 
-var quotes = [
+const quotes = [
 
   {
     quote:'In a gentle way, you can shake the world.',

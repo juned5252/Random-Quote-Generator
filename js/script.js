@@ -1,15 +1,15 @@
 // event listener to respond to "Show another quote" button clicks
 // when user clicks anywhere on the button, the "printQuote" function is called
-var message = ''
-var result
+let message = ''
+let result
 document.getElementById('loadQuote').addEventListener("click",printQuote, false);
 
 
 
 // getRandomQuote returns a random quote object from the quotesArray
-function getRandomQuote(){
-  var rand = Math.floor(Math.random() * quotes.length);
-  var output = quotes[rand];
+const getRandomQuote = () => {
+  let rand = Math.floor(Math.random() * quotes.length);
+  let output = quotes[rand];
   return output;
 }
 
@@ -25,8 +25,8 @@ function printQuote(){
 }
 
 // the optional function returns either year or citation or both from the quote object if it exists
-function optional(){
-  var returnValue = '';
+const optional = () => {
+  let returnValue = '';
   if (result.citation !== undefined) {
    returnValue = '<span class="citation">' + result.citation + '</span>'
 }
@@ -36,10 +36,10 @@ function optional(){
   return returnValue
 }
 // this function returns a string with randomly generated hex-color
-function getRandomColor() {
-  var letters = '0123456789ABCDEF';
-  var color = '#';
-  for (var i = 0; i < 6; i++) {
+const getRandomColor = () => {
+  let letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
     color += letters[Math.floor(Math.random() * 16)];
   }
   return color;
